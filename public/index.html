@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情绪色彩调研</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header id="mainHeader"
+            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid black; padding-bottom: 1rem; margin-bottom: 3rem;">
+            <h1 id="appTitle" style="margin:0;">情绪色彩调研</h1>
+            <img src="bit_logo.png" alt="BIT Logo" style="height: 86px; width: auto;">
+        </header>
+
+        <div class="progress-container">
+            <span id="progressText"></span>
+        </div>
+
+        <div id="mainContent">
+            <!-- Dynamic Content -->
+        </div>
+
+        <footer style="margin-top: auto; text-align: center; padding: 2rem; border-top: 1px solid #eee;">
+            <a id="langBtn" href="#" style="color: #666; text-decoration: none; font-size: 0.9rem;">中文 |
+                <b>English</b></a>
+            <div style="margin-top: 10px; font-size: 0.8rem; color: #999;">&copy; BIT COLOUR GROUP 2026</div>
+        </footer>
+    </div>
+
+    <!-- LeanCloud SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.0/dist/av-min.js"></script>
+    <script>
+        AV.init({
+            appId: "XGKypYJKuSbT4XMqH2n3X50R-MdYXbMMI",
+            appKey: "vwsMa1K3uFdCmDzznzv53d89",
+            serverURL: "https://api.wayneli.online"
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
